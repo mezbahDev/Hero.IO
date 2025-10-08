@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
 
-const Apps = ({ handleInstall }) => {
+const Apps = () => {
   const [allCards, setAllCards] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch("data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setAllCards(data))
       .catch((err) => console.log("Error loading data:", err));
@@ -16,6 +16,17 @@ const Apps = ({ handleInstall }) => {
   const filteredCards = allCards.filter((card) =>
     card.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  const handleInstall = (app) => {
+    const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+    if (!installedApps.find((installedApp) => installedApp.id === app.id)) {
+      const updatedApps = [...installedApps, app];
+      localStorage.setItem("installedApps", JSON.stringify(updatedApps));
+      
+      // ✅ Custom event trigger করুন
+      window.dispatchEvent(new Event('installedAppsUpdated'));
+    }
+  };
 
   return (
     <div className="bg-[#f3f4f6] min-h-screen flex flex-col items-center p-[80px] gap-[40px]">
@@ -64,13 +75,19 @@ const Apps = ({ handleInstall }) => {
       {/* Display Cards */}
       {filteredCards.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black mt-10">
-          {filteredCards.map((singleCard) => (
-            <Card
-              key={singleCard.id}
-              singleCard={singleCard}
-              onInstall={() => handleInstall(singleCard)} // ✅ props
-            />
-          ))}
+          {filteredCards.map((singleCard) => {
+            const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+            const isInstalled = installedApps.some(app => app.id === singleCard.id);
+            
+            return (
+              <Card
+                key={singleCard.id}
+                singleCard={singleCard}
+                onInstall={() => handleInstall(singleCard)}
+                isInstalled={isInstalled}
+              />
+            );
+          })}
         </div>
       ) : (
         <p className="text-black text-6xl mt-10">No Apps Found</p>

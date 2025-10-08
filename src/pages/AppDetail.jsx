@@ -9,6 +9,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import download from "../assets/icon-downloads.png";
 import rating from "../assets/icon-ratings.png";
 import review from "../assets/review.png";
@@ -24,12 +26,45 @@ const AppDetail = () => {
       .then((data) => {
         const selectedApp = data.find((item) => item.id === Number(id));
         setApp(selectedApp);
+
+        // Check if app is already installed
+        const installedApps =
+          JSON.parse(localStorage.getItem("installedApps")) || [];
+        const isAppInstalled = installedApps.some(
+          (installedApp) => installedApp.id === selectedApp.id
+        );
+        setIsInstalled(isAppInstalled);
       })
       .catch((err) => console.log("Error loading app data:", err));
   }, [id]);
 
   const handleInstall = () => {
-    setIsInstalled(true);
+    if (app && !isInstalled) {
+      // Show toast loading
+      const toastId = toast.loading(`${app.title} is installing...`);
+
+      // Simulate installation delay
+      setTimeout(() => {
+        // Save to localStorage
+        const installedApps =
+          JSON.parse(localStorage.getItem("installedApps")) || [];
+        const updatedApps = [...installedApps, app];
+        localStorage.setItem("installedApps", JSON.stringify(updatedApps));
+
+        setIsInstalled(true);
+
+        // ✅ Custom event trigger করুন Installation page update করার জন্য
+        window.dispatchEvent(new Event("installedAppsUpdated"));
+
+        // Update toast to success
+        toast.update(toastId, {
+          render: `${app.title} installed successfully!`,
+          type: "success",
+          isLoading: false,
+          autoClose: 3000,
+        });
+      }, 2000); // 2 seconds simulated installation
+    }
   };
 
   if (!app) return <p className="text-center mt-10 text-black">Loading...</p>;
@@ -133,6 +168,9 @@ const AppDetail = () => {
         </ResponsiveContainer>
       </div>
       <Description />
+
+      {/* Toast container */}
+      <ToastContainer position="top-right" />
     </div>
   );
 };
