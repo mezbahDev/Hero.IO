@@ -13,7 +13,7 @@ const Cards = ({ data }) => {
         </p>
       </div>
 
-      <div className="text-black grid grid-cols-3 gap-6">
+      <div className="text-black grid grid-cols-4 gap-6">
         {data.map((singleCard) => (
           <Card key={singleCard.id} singleCard={singleCard} />
         ))}
