@@ -12,19 +12,18 @@ const Apps = () => {
       .catch((err) => console.log("Error loading data:", err));
   }, []);
 
-  // filter by search
   const filteredCards = allCards.filter((card) =>
     card.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const handleInstall = (app) => {
-    const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
     if (!installedApps.find((installedApp) => installedApp.id === app.id)) {
       const updatedApps = [...installedApps, app];
       localStorage.setItem("installedApps", JSON.stringify(updatedApps));
-      
-      // ✅ Custom event trigger করুন
-      window.dispatchEvent(new Event('installedAppsUpdated'));
+
+      window.dispatchEvent(new Event("installedAppsUpdated"));
     }
   };
 
@@ -38,7 +37,6 @@ const Apps = () => {
         </p>
       </div>
 
-      {/* Search */}
       <div className="w-full flex justify-between items-center px-[130px] mt-[46px]">
         <p className="text-[24px] font-semibold">
           <span className="font-semibold text-black">
@@ -47,7 +45,6 @@ const Apps = () => {
         </p>
 
         <div className="relative w-64">
-          {/* Search Icon */}
           <svg
             className="h-5 w-5 absolute left-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
             xmlns="http://www.w3.org/2000/svg"
@@ -72,13 +69,15 @@ const Apps = () => {
         </div>
       </div>
 
-      {/* Display Cards */}
       {filteredCards.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black mt-10">
           {filteredCards.map((singleCard) => {
-            const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
-            const isInstalled = installedApps.some(app => app.id === singleCard.id);
-            
+            const installedApps =
+              JSON.parse(localStorage.getItem("installedApps")) || [];
+            const isInstalled = installedApps.some(
+              (app) => app.id === singleCard.id
+            );
+
             return (
               <Card
                 key={singleCard.id}

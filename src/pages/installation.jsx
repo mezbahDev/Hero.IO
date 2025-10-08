@@ -5,6 +5,8 @@ import ratings from "../assets/icon-ratings.png";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
+  const [sortBy, setSortBy] = useState("default");
+  const [showSortOptions, setShowSortOptions] = useState(false);
 
   // localStorage থেকে installed apps load করুন
   const loadInstalledApps = () => {
@@ -32,6 +34,35 @@ const Installation = () => {
     };
   }, []);
 
+  // Size sort functionality
+  const sortAppsBySize = (apps, sortType) => {
+    const sortedApps = [...apps];
+
+    switch (sortType) {
+      case "size-high-to-low":
+        return sortedApps.sort((a, b) => {
+          const sizeA = parseFloat(a.size) || 0;
+          const sizeB = parseFloat(b.size) || 0;
+          return sizeB - sizeA;
+        });
+
+      case "size-low-to-high":
+        return sortedApps.sort((a, b) => {
+          const sizeA = parseFloat(a.size) || 0;
+          const sizeB = parseFloat(b.size) || 0;
+          return sizeA - sizeB;
+        });
+
+      default:
+        return sortedApps;
+    }
+  };
+
+  const handleSortChange = (sortType) => {
+    setSortBy(sortType);
+    setShowSortOptions(false);
+  };
+
   const handleUninstall = (appId) => {
     const updatedApps = installedApps.filter((app) => app.id !== appId);
     setInstalledApps(updatedApps);
@@ -39,6 +70,19 @@ const Installation = () => {
 
     // ✅ Uninstall করলেও event trigger করুন
     window.dispatchEvent(new Event("installedAppsUpdated"));
+  };
+
+  const sortedApps = sortAppsBySize(installedApps, sortBy);
+
+  const getSortDisplayText = () => {
+    switch (sortBy) {
+      case "size-high-to-low":
+        return "Size (High to Low)";
+      case "size-low-to-high":
+        return "Size (Low to High)";
+      default:
+        return "Sort By Size";
+    }
   };
 
   return (
@@ -55,17 +99,44 @@ const Installation = () => {
       <div className="w-full px-[40px] mt-[40px]">
         <div className="flex justify-between items-center">
           <p className="text-black text-[24px] font-semibold">
-            {installedApps.length} {installedApps.length === 1 ? "App" : "Apps"}{" "}
-            Found
+            {sortedApps.length} {sortedApps.length === 1 ? "App" : "Apps"} Found
           </p>
-          <div className="text-[#627382] flex items-center border py-[12px] px-[16px] rounded-[4px] cursor-pointer">
-            Sort By Size <CircleChevronDown className="ml-[10px]" />
+
+          {/* Sort Dropdown */}
+          <div className="relative">
+            <div
+              onClick={() => setShowSortOptions(!showSortOptions)}
+              className="text-[#627382] flex items-center border py-[12px] px-[16px] rounded-[4px] cursor-pointer bg-white hover:bg-gray-50 transition"
+            >
+              {getSortDisplayText()} <CircleChevronDown className="ml-[10px]" />
+            </div>
+
+            {/* Sort Options Dropdown */}
+            {showSortOptions && (
+              <div className="absolute top-full right-0 mt-2 w-48 bg-white border rounded-[4px] shadow-lg z-10">
+                <div className="p-2">
+                  <button
+                    onClick={() => handleSortChange("size-high-to-low")}
+                    className="text-black font-medium w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm transition"
+                  >
+                    Size (High to Low)
+                  </button>
+                  <button
+                    onClick={() => handleSortChange("size-low-to-high")}
+                    className="text-black font-medium w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm transition"
+                  >
+                    Size (Low to High)
+                  </button>
+                  <div className="border-t my-1"></div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
 
       <div className="w-full px-[40px] mt-4">
-        {installedApps.length === 0 ? (
+        {sortedApps.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-[8px] shadow-md">
             <p className="text-[#627382] text-xl">No apps installed yet</p>
             <p className="text-[#627382] mt-2">
@@ -74,7 +145,7 @@ const Installation = () => {
           </div>
         ) : (
           <div className="space-y-4">
-            {installedApps.map((app) => (
+            {sortedApps.map((app) => (
               <div
                 key={app.id}
                 className="w-full text-black flex flex-col gap-4 bg-white p-4 rounded-[8px] shadow-md"
@@ -125,6 +196,14 @@ const Installation = () => {
           </div>
         )}
       </div>
+
+      {/* Close dropdown when clicking outside */}
+      {showSortOptions && (
+        <div
+          className="fixed inset-0 z-0"
+          onClick={() => setShowSortOptions(false)}
+        />
+      )}
     </div>
   );
 };

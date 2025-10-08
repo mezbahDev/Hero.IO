@@ -27,7 +27,6 @@ const AppDetail = () => {
         const selectedApp = data.find((item) => item.id === Number(id));
         setApp(selectedApp);
 
-        // Check if app is already installed
         const installedApps =
           JSON.parse(localStorage.getItem("installedApps")) || [];
         const isAppInstalled = installedApps.some(
@@ -40,12 +39,9 @@ const AppDetail = () => {
 
   const handleInstall = () => {
     if (app && !isInstalled) {
-      // Show toast loading
       const toastId = toast.loading(`${app.title} is installing...`);
 
-      // Simulate installation delay
       setTimeout(() => {
-        // Save to localStorage
         const installedApps =
           JSON.parse(localStorage.getItem("installedApps")) || [];
         const updatedApps = [...installedApps, app];
@@ -53,17 +49,15 @@ const AppDetail = () => {
 
         setIsInstalled(true);
 
-        // ✅ Custom event trigger করুন Installation page update করার জন্য
         window.dispatchEvent(new Event("installedAppsUpdated"));
 
-        // Update toast to success
         toast.update(toastId, {
           render: `${app.title} installed successfully!`,
           type: "success",
           isLoading: false,
           autoClose: 3000,
         });
-      }, 2000); // 2 seconds simulated installation
+      }, 2000);
     }
   };
 
