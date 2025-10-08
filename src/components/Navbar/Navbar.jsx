@@ -5,7 +5,7 @@ import { Github } from "lucide-react";
 
 const Navbar = () => {
   const links = (
-    <div className="flex gap-4 text-black font-semibold cursor-pointer">
+    <div className="flex gap-9 text-black font-semibold cursor-pointer">
       <li className="text-gradient-to-r from-[#632EE3] to-[#9F62F2]" to="/home">
         Home
       </li>
