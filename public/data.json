@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/apps/app1.png",
+    "title": "TaskMaster",
+    "companyName": "HeroTech",
+    "description": "A productivity app to manage your daily tasks efficiently.",
+    "size": 25,
+    "reviews": 120,
+    "ratingAvg": 4.5,
+    "downloads": 15000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 50 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/assets/apps/app2.png",
+    "title": "FitTrack",
+    "companyName": "HealthPlus",
+    "description": "Track your fitness and health goals easily with FitTrack.",
+    "size": 30,
+    "reviews": 200,
+    "ratingAvg": 4.2,
+    "downloads": 22000,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 70 },
+      { "name": "5 star", "count": 80 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/assets/apps/app3.png",
+    "title": "BudgetBuddy",
+    "companyName": "FinanceCorp",
+    "description": "Manage your expenses and savings effortlessly.",
+    "size": 18,
+    "reviews": 90,
+    "ratingAvg": 4.0,
+    "downloads": 12000,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 29 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/assets/apps/app4.png",
+    "title": "WeatherNow",
+    "companyName": "SkyNet",
+    "description": "Real-time weather updates and forecasts worldwide.",
+    "size": 12,
+    "reviews": 50,
+    "ratingAvg": 4.3,
+    "downloads": 8000,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 18 },
+      { "name": "5 star", "count": 15 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "/assets/apps/app5.png",
+    "title": "NoteIt",
+    "companyName": "NoteSoft",
+    "description": "Take quick notes and organize your ideas easily.",
+    "size": 10,
+    "reviews": 75,
+    "ratingAvg": 4.1,
+    "downloads": 9500,
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 25 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "/assets/apps/app6.png",
+    "title": "TravelMate",
+    "companyName": "GlobeTrotters",
+    "description": "Plan your trips and explore destinations like a pro.",
+    "size": 40,
+    "reviews": 150,
+    "ratingAvg": 4.6,
+    "downloads": 18000,
+    "ratings": [
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 66 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "/assets/apps/app7.png",
+    "title": "PhotoSnap",
+    "companyName": "PixelArt",
+    "description": "Capture, edit, and share stunning photos easily.",
+    "size": 35,
+    "reviews": 110,
+    "ratingAvg": 4.4,
+    "downloads": 14000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 35 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "/assets/apps/app8.png",
+    "title": "MeditateNow",
+    "companyName": "ZenLife",
+    "description": "Guided meditation and mindfulness exercises.",
+    "size": 15,
+    "reviews": 95,
+    "ratingAvg": 4.5,
+    "downloads": 11000,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 7 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 35 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "/assets/apps/app9.png",
+    "title": "Foodies",
+    "companyName": "YummyTech",
+    "description": "Discover recipes and order food from local restaurants.",
+    "size": 28,
+    "reviews": 130,
+    "ratingAvg": 4.2,
+    "downloads": 17000,
+    "ratings": [
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 49 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "/assets/apps/app10.png",
+    "title": "LearnHub",
+    "companyName": "EduSmart",
+    "description": "Interactive courses and tutorials for skill development.",
+    "size": 22,
+    "reviews": 80,
+    "ratingAvg": 4.3,
+    "downloads": 12500,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 25 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "/assets/apps/app11.png",
+    "title": "MovieMania",
+    "companyName": "CineWorld",
+    "description": "Track movies, ratings, and showtimes easily.",
+    "size": 32,
+    "reviews": 140,
+    "ratingAvg": 4.4,
+    "downloads": 15500,
+    "ratings": [
+      { "name": "1 star", "count": 7 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 45 },
+      { "name": "5 star", "count": 51 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "/assets/apps/app12.png",
+    "title": "NewsFlash",
+    "companyName": "InfoDaily",
+    "description": "Latest news and updates from around the world.",
+    "size": 18,
+    "reviews": 100,
+    "ratingAvg": 4.1,
+    "downloads": 12000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 35 }
+    ]
+  }
+]
