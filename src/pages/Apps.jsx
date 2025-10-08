@@ -3,6 +3,7 @@ import Card from "../components/Card/Card";
 
 const Apps = () => {
   const [allCards, setAllCards] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch("data.json")
@@ -11,23 +12,26 @@ const Apps = () => {
       .catch((err) => console.log("Error loading data:", err));
   }, []);
 
+  // filter by search
+  const filteredCards = allCards.filter((card) =>
+    card.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="bg-[#f3f4f6] min-h-screen flex flex-col items-center p-[80px] gap-[40px]">
       {/* Header */}
       <div className="text-black text-center">
         <h1 className="text-[48px] font-bold mb-2">Our All Applications</h1>
         <p className="text-[18px] text-[#627382]">
-          <p>
-            Explore All Apps on the Market developed by us. We code for Millions
-          </p>
+          Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
 
-      {/* Cards Grid */}
+      {/* Search */}
       <div className="w-full flex justify-between items-center px-[130px] mt-[46px]">
         <p className="text-[24px] font-semibold">
           <span className="font-semibold text-black">
-            ({allCards.length}) Apps Found
+            ({filteredCards.length}) Apps Found
           </span>
         </p>
 
@@ -48,16 +52,23 @@ const Apps = () => {
           <input
             type="search"
             placeholder="Search Apps"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-8 pr-4 py-2 text-black bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black">
-        {allCards.map((singleCard) => (
-          <Card key={singleCard.id} singleCard={singleCard} />
-        ))}
-      </div>
+      {/* Display Cards */}
+      {filteredCards.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black mt-10">
+          {filteredCards.map((singleCard) => (
+            <Card key={singleCard.id} singleCard={singleCard} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-black text-6xl font-bold mt-10">No Apps Found</p>
+      )}
     </div>
   );
 };

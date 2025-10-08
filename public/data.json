@@ -1,140 +1,140 @@
 [
   {
     "id": 1,
-    "title": "TaskMaster",
+    "title": "TaskMaster - Productivity & Task Management App",
     "image": "../src/assets/technology.jpg",
     "downloads": "3M",
     "ratingAvg": 4.5
   },
   {
     "id": 2,
-    "title": "FitTrack",
+    "title": "FitTrack - Fitness & Health Tracker",
     "image": "../src/assets/fittrack.jpg",
     "downloads": "4M",
     "ratingAvg": 4.2
   },
   {
     "id": 3,
-    "title": "BudgetBuddy",
+    "title": "BudgetBuddy - Personal Finance & Budget Planner",
     "image": "../src/assets/budget.jpg",
     "downloads": "2M",
     "ratingAvg": 4.0
   },
   {
     "id": 4,
-    "title": "WeatherNow",
+    "title": "WeatherNow - Real-time Weather Forecast",
     "image": "../src/assets/weather.jpg",
-    "": "1M",
+    "downloads": "1M",
     "ratingAvg": 4.3
   },
   {
     "id": 5,
-    "title": "NoteIt",
+    "title": "NoteIt - Note Taking & Organization App",
     "image": "../src/assets/note.jpg",
     "downloads": "1M",
     "ratingAvg": 4.1
   },
   {
     "id": 6,
-    "title": "TravelMate",
+    "title": "TravelMate - Trip Planner & Travel Guide",
     "image": "../src/assets/travel.jpg",
     "downloads": "3M",
     "ratingAvg": 4.6
   },
   {
     "id": 7,
-    "title": "PhotoSnap",
+    "title": "PhotoSnap - Photo Editor & Camera App",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
     "ratingAvg": 4.4
   },
   {
     "id": 8,
-    "title": "MeditateNow",
+    "title": "MeditateNow - Meditation & Mindfulness App",
     "image": "../src/assets/meditate.jpg",
     "downloads": "2M",
     "ratingAvg": 4.5
   },
   {
     "id": 9,
-    "title": "Foodies",
+    "title": "Foodies - Recipe & Food Delivery App",
     "image": "../src/assets/panda.jpg",
     "downloads": "3M",
     "ratingAvg": 4.2
   },
   {
     "id": 10,
-    "title": "LearnHub",
+    "title": "LearnHub - Online Learning & Courses Platform",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
     "ratingAvg": 4.3
   },
   {
     "id": 11,
-    "title": "MovieMania",
+    "title": "MovieMania - Movie Streaming & Reviews",
     "image": "../src/assets/movie.jpg",
     "downloads": "3M",
     "ratingAvg": 4.4
   },
   {
     "id": 12,
-    "title": "NewsFlash",
+    "title": "NewsFlash - Latest News & Headlines App",
     "image": "../src/assets/news.jpg",
     "downloads": "2M",
     "ratingAvg": 4.1
   },
   {
     "id": 13,
-    "title": "TaskMaster",
+    "title": "TaskMaster Pro - Advanced Productivity App",
     "image": "../src/assets/technology.jpg",
     "downloads": "3M",
     "ratingAvg": 4.5
   },
   {
     "id": 14,
-    "title": "FitTrack",
+    "title": "FitTrack Plus - Health & Fitness Tracker",
     "image": "../src/assets/fittrack.jpg",
     "downloads": "4M",
     "ratingAvg": 4.2
   },
   {
     "id": 15,
-    "title": "BudgetBuddy",
+    "title": "BudgetBuddy Premium - Finance Manager",
     "image": "../src/assets/budget.jpg",
     "downloads": "2M",
     "ratingAvg": 4.0
   },
   {
     "id": 16,
-    "title": "WeatherNow",
+    "title": "WeatherNow Pro - Accurate Weather Updates",
     "image": "../src/assets/weather.jpg",
-    "": "1M",
+    "downloads": "1M",
     "ratingAvg": 4.3
   },
   {
     "id": 17,
-    "title": "NoteIt",
+    "title": "NoteIt Plus - Organize Your Notes",
     "image": "../src/assets/note.jpg",
     "downloads": "1M",
     "ratingAvg": 4.1
   },
   {
     "id": 18,
-    "title": "TravelMate",
+    "title": "TravelMate Pro - Trip Planning & Guide",
     "image": "../src/assets/travel.jpg",
     "downloads": "3M",
     "ratingAvg": 4.6
   },
   {
     "id": 19,
-    "title": "PhotoSnap",
+    "title": "PhotoSnap Pro - Advanced Photo Editor",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
     "ratingAvg": 4.4
   },
   {
     "id": 20,
-    "title": "MeditateNow",
+    "title": "MeditateNow Pro - Guided Meditation & Mindfulness",
     "image": "../src/assets/meditate.jpg",
     "downloads": "2M",
     "ratingAvg": 4.5
