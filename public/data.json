@@ -82,5 +82,61 @@
     "image": "../src/assets/news.jpg",
     "downloads": "2M",
     "ratingAvg": 4.1
+  },
+  {
+    "id": 13,
+    "title": "TaskMaster",
+    "image": "../src/assets/technology.jpg",
+    "downloads": "3M",
+    "ratingAvg": 4.5
+  },
+  {
+    "id": 14,
+    "title": "FitTrack",
+    "image": "../src/assets/fittrack.jpg",
+    "downloads": "4M",
+    "ratingAvg": 4.2
+  },
+  {
+    "id": 15,
+    "title": "BudgetBuddy",
+    "image": "../src/assets/budget.jpg",
+    "downloads": "2M",
+    "ratingAvg": 4.0
+  },
+  {
+    "id": 16,
+    "title": "WeatherNow",
+    "image": "../src/assets/weather.jpg",
+    "": "1M",
+    "ratingAvg": 4.3
+  },
+  {
+    "id": 17,
+    "title": "NoteIt",
+    "image": "../src/assets/note.jpg",
+    "downloads": "1M",
+    "ratingAvg": 4.1
+  },
+  {
+    "id": 18,
+    "title": "TravelMate",
+    "image": "../src/assets/travel.jpg",
+    "downloads": "3M",
+    "ratingAvg": 4.6
+  },
+  {
+    "id": 19,
+    "title": "PhotoSnap",
+    "image": "../src/assets/snap.jpg",
+    "downloads": "2M",
+    "ratingAvg": 4.4
+  },
+  {
+    "id": 20,
+    "title": "MeditateNow",
+    "image": "../src/assets/meditate.jpg",
+    "downloads": "2M",
+    "ratingAvg": 4.5
   }
 ]
