@@ -4,11 +4,11 @@ import ratings from "../../assets/icon-ratings.png";
 
 const Card = ({ singleCard }) => {
   return (
-    <div className="p-4 bg-white w-[350px] rounded-[4px] flex flex-col gap-4">
+    <div className="p-4 bg-white max-w-[350px] rounded-[4px] flex flex-col justify-between">
       <img
         src={singleCard.image}
         alt={singleCard.title}
-        className="w-full h-[316px] object-cover mb-2 rounded-[8px]"
+        className="w-full max-h-[316px] mb-2 rounded-[8px]"
       />
       <h3 className="font-medium text-[20px]">{singleCard.title}</h3>
 
