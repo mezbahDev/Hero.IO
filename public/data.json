@@ -4,139 +4,179 @@
     "title": "TaskMaster - Productivity & Task Management App",
     "image": "../src/assets/technology.jpg",
     "downloads": "3M",
-    "ratingAvg": 4.5
+    "ratingAvg": 4.5,
+    "reviews": "120K",
+    "size": "25MB"
   },
   {
     "id": 2,
     "title": "FitTrack - Fitness & Health Tracker",
     "image": "../src/assets/fittrack.jpg",
     "downloads": "4M",
-    "ratingAvg": 4.2
+    "ratingAvg": 4.2,
+    "reviews": "98K",
+    "size": "30MB"
   },
   {
     "id": 3,
     "title": "BudgetBuddy - Personal Finance & Budget Planner",
     "image": "../src/assets/budget.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.0
+    "ratingAvg": 4.0,
+    "reviews": "75K",
+    "size": "28MB"
   },
   {
     "id": 4,
     "title": "WeatherNow - Real-time Weather Forecast",
     "image": "../src/assets/weather.jpg",
     "downloads": "1M",
-    "ratingAvg": 4.3
+    "ratingAvg": 4.3,
+    "reviews": "55K",
+    "size": "22MB"
   },
   {
     "id": 5,
     "title": "NoteIt - Note Taking & Organization App",
     "image": "../src/assets/note.jpg",
     "downloads": "1M",
-    "ratingAvg": 4.1
+    "ratingAvg": 4.1,
+    "reviews": "60K",
+    "size": "20MB"
   },
   {
     "id": 6,
     "title": "TravelMate - Trip Planner & Travel Guide",
     "image": "../src/assets/travel.jpg",
     "downloads": "3M",
-    "ratingAvg": 4.6
+    "ratingAvg": 4.6,
+    "reviews": "110K",
+    "size": "35MB"
   },
   {
     "id": 7,
     "title": "PhotoSnap - Photo Editor & Camera App",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.4
+    "ratingAvg": 4.4,
+    "reviews": "90K",
+    "size": "40MB"
   },
   {
     "id": 8,
     "title": "MeditateNow - Meditation & Mindfulness App",
     "image": "../src/assets/meditate.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.5
+    "ratingAvg": 4.5,
+    "reviews": "80K",
+    "size": "23MB"
   },
   {
     "id": 9,
     "title": "Foodies - Recipe & Food Delivery App",
     "image": "../src/assets/panda.jpg",
     "downloads": "3M",
-    "ratingAvg": 4.2
+    "ratingAvg": 4.2,
+    "reviews": "70K",
+    "size": "33MB"
   },
   {
     "id": 10,
     "title": "LearnHub - Online Learning & Courses Platform",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.3
+    "ratingAvg": 4.3,
+    "reviews": "65K",
+    "size": "45MB"
   },
   {
     "id": 11,
     "title": "MovieMania - Movie Streaming & Reviews",
     "image": "../src/assets/movie.jpg",
     "downloads": "3M",
-    "ratingAvg": 4.4
+    "ratingAvg": 4.4,
+    "reviews": "95K",
+    "size": "50MB"
   },
   {
     "id": 12,
     "title": "NewsFlash - Latest News & Headlines App",
     "image": "../src/assets/news.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.1
+    "ratingAvg": 4.1,
+    "reviews": "55K",
+    "size": "27MB"
   },
   {
     "id": 13,
     "title": "TaskMaster Pro - Advanced Productivity App",
     "image": "../src/assets/technology.jpg",
     "downloads": "3M",
-    "ratingAvg": 4.5
+    "ratingAvg": 4.5,
+    "reviews": "130K",
+    "size": "30MB"
   },
   {
     "id": 14,
     "title": "FitTrack Plus - Health & Fitness Tracker",
     "image": "../src/assets/fittrack.jpg",
     "downloads": "4M",
-    "ratingAvg": 4.2
+    "ratingAvg": 4.2,
+    "reviews": "105K",
+    "size": "35MB"
   },
   {
     "id": 15,
     "title": "BudgetBuddy Premium - Finance Manager",
     "image": "../src/assets/budget.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.0
+    "ratingAvg": 4.0,
+    "reviews": "85K",
+    "size": "32MB"
   },
   {
     "id": 16,
     "title": "WeatherNow Pro - Accurate Weather Updates",
     "image": "../src/assets/weather.jpg",
     "downloads": "1M",
-    "ratingAvg": 4.3
+    "ratingAvg": 4.3,
+    "reviews": "60K",
+    "size": "25MB"
   },
   {
     "id": 17,
     "title": "NoteIt Plus - Organize Your Notes",
     "image": "../src/assets/note.jpg",
     "downloads": "1M",
-    "ratingAvg": 4.1
+    "ratingAvg": 4.1,
+    "reviews": "62K",
+    "size": "22MB"
   },
   {
     "id": 18,
     "title": "TravelMate Pro - Trip Planning & Guide",
     "image": "../src/assets/travel.jpg",
     "downloads": "3M",
-    "ratingAvg": 4.6
+    "ratingAvg": 4.6,
+    "reviews": "115K",
+    "size": "38MB"
   },
   {
     "id": 19,
     "title": "PhotoSnap Pro - Advanced Photo Editor",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.4
+    "ratingAvg": 4.4,
+    "reviews": "92K",
+    "size": "42MB"
   },
   {
     "id": 20,
     "title": "MeditateNow Pro - Guided Meditation & Mindfulness",
     "image": "../src/assets/meditate.jpg",
     "downloads": "2M",
-    "ratingAvg": 4.5
+    "ratingAvg": 4.5,
+    "reviews": "82K",
+    "size": "26MB"
   }
 ]

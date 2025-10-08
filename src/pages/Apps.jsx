@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
 
-const Apps = () => {
+const Apps = ({ handleInstall }) => {
   const [allCards, setAllCards] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -36,6 +36,7 @@ const Apps = () => {
         </p>
 
         <div className="relative w-64">
+          {/* Search Icon */}
           <svg
             className="h-5 w-5 absolute left-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
             xmlns="http://www.w3.org/2000/svg"
@@ -49,12 +50,13 @@ const Apps = () => {
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
+
           <input
             type="search"
             placeholder="Search Apps"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-8 pr-4 py-2 text-black bg-transparent border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full pl-8 pr-4 py-2 text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
       </div>
@@ -63,11 +65,15 @@ const Apps = () => {
       {filteredCards.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black mt-10">
           {filteredCards.map((singleCard) => (
-            <Card key={singleCard.id} singleCard={singleCard} />
+            <Card
+              key={singleCard.id}
+              singleCard={singleCard}
+              onInstall={() => handleInstall(singleCard)} // ✅ props
+            />
           ))}
         </div>
       ) : (
-        <p className="text-black text-6xl font-bold mt-10">No Apps Found</p>
+        <p className="text-black text-6xl mt-10">No Apps Found</p>
       )}
     </div>
   );
