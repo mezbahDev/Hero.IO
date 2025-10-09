@@ -8,7 +8,7 @@
     "ratingAvg": 4.5,
     "reviews": "120K",
     "size": "25MB",
-    "description": "An all-in-one productivity tool to manage tasks, set reminders, and track your daily progress efficiently.",
+    "description": "TaskMaster revolutionizes personal productivity by offering an intuitive task management system that adapts to your workflow. With smart categorization, priority tagging, and deadline tracking, you can organize both personal and professional tasks effortlessly. The app features cross-device synchronization, allowing seamless access from your phone, tablet, or computer. Advanced features include collaborative project boards, progress analytics, and AI-powered task suggestions based on your habits. Customizable reminders ensure you never miss important deadlines, while the clean, minimalist interface reduces cognitive load and enhances focus.",
     "ratings": [
       { "name": "1 star", "count": 1200 },
       { "name": "2 star", "count": 2500 },
@@ -26,7 +26,7 @@
     "ratingAvg": 4.2,
     "reviews": "98K",
     "size": "30MB",
-    "description": "Track your workouts, monitor your health stats, and stay motivated with personalized fitness goals.",
+    "description": "FitTrack provides comprehensive health monitoring with advanced activity tracking, workout planning, and nutrition guidance. The app syncs with popular wearables to monitor steps, heart rate, sleep patterns, and calorie expenditure. Personalized workout routines adapt to your fitness level and goals, whether you're aiming for weight loss, muscle gain, or general wellness. The nutrition module includes barcode scanning for food logging, macro tracking, and meal planning suggestions. Community challenges and achievement badges keep you motivated, while detailed analytics help you understand your progress over time and make data-driven health decisions.",
     "ratings": [
       { "name": "1 star", "count": 2200 },
       { "name": "2 star", "count": 3100 },
@@ -44,7 +44,7 @@
     "ratingAvg": 4.0,
     "reviews": "75K",
     "size": "28MB",
-    "description": "Easily track your expenses, set budgets, and reach your financial goals with smart analytics.",
+    "description": "BudgetBuddy transforms financial management with intelligent expense categorization, automated bill tracking, and personalized savings goals. The app connects securely to your bank accounts for real-time transaction monitoring and provides detailed spending insights across categories. Advanced features include debt payoff calculators, investment tracking, and retirement planning tools. Customizable budget templates help you allocate funds effectively, while alerts notify you of unusual spending patterns. The secure encryption ensures your financial data remains private, and the export functionality allows easy sharing with financial advisors or tax preparers for comprehensive financial planning.",
     "ratings": [
       { "name": "1 star", "count": 3000 },
       { "name": "2 star", "count": 4000 },
@@ -62,7 +62,7 @@
     "ratingAvg": 4.3,
     "reviews": "55K",
     "size": "22MB",
-    "description": "Stay updated with accurate, real-time weather forecasts and alerts tailored to your location.",
+    "description": "WeatherNow delivers hyper-accurate weather predictions with detailed hourly and 10-day forecasts for any location worldwide. The app features severe weather alerts, precipitation probability maps, and air quality indices. Advanced radar animations show storm movement patterns, while customizable widgets provide at-a-glance weather information on your home screen. The intuitive interface displays temperature trends, wind speeds, humidity levels, and UV indexes. Location-based alerts warn you of incoming weather changes, and the offline mode ensures access to saved forecasts even without internet connectivity. Perfect for travelers, outdoor enthusiasts, and daily commuters alike.",
     "ratings": [
       { "name": "1 star", "count": 1000 },
       { "name": "2 star", "count": 2200 },
@@ -80,7 +80,7 @@
     "ratingAvg": 4.1,
     "reviews": "60K",
     "size": "20MB",
-    "description": "Organize your thoughts, create quick notes, and sync across all devices effortlessly.",
+    "description": "NoteIt offers a versatile note-taking experience with rich text formatting, voice memos, image attachments, and handwriting recognition. Organize notes using tags, notebooks, and smart folders that automatically categorize content. The powerful search functionality indexes all your notes, including text within images and audio transcripts. Collaboration features allow real-time editing and commenting with team members. End-to-end encryption ensures your private thoughts remain secure, while cross-platform synchronization keeps your notes accessible across all devices. Templates for meeting notes, project plans, and study guides streamline your workflow, making NoteIt the ultimate digital notebook for students and professionals.",
     "ratings": [
       { "name": "1 star", "count": 1300 },
       { "name": "2 star", "count": 2600 },
@@ -98,7 +98,7 @@
     "ratingAvg": 4.6,
     "reviews": "110K",
     "size": "35MB",
-    "description": "Plan your trips with ease, find top destinations, and explore new places confidently.",
+    "description": "TravelMate simplifies trip planning with comprehensive itinerary management, destination research, and booking integration. Create detailed travel plans with flight schedules, hotel reservations, activity bookings, and restaurant recommendations. The app provides offline maps, currency converters, and phrase translators for international travel. User-generated reviews and photos help you discover hidden gems, while price tracking ensures you get the best deals on flights and accommodations. Safety features include emergency contact integration, local embassy information, and real-time travel advisories. Whether you're planning a weekend getaway or a world tour, TravelMate handles all the details so you can focus on making memories.",
     "ratings": [
       { "name": "1 star", "count": 1400 },
       { "name": "2 star", "count": 1800 },
@@ -116,7 +116,7 @@
     "ratingAvg": 4.4,
     "reviews": "90K",
     "size": "40MB",
-    "description": "Edit your photos with advanced filters, AI enhancements, and one-tap beautify options.",
+    "description": "PhotoSnap combines professional-grade editing tools with an intuitive interface suitable for beginners and experts alike. Features include layer-based editing, selective adjustments, curve tools, and advanced color grading. AI-powered enhancements automatically improve lighting, remove imperfections, and enhance details. The built-in camera offers manual controls for ISO, shutter speed, and white balance, along with various shooting modes and filters. Creative tools like double exposure, text overlays, and collage makers unlock artistic possibilities. Cloud storage integration ensures your edited photos are safely backed up and accessible across devices. Regular updates introduce new filters and features inspired by the latest photography trends.",
     "ratings": [
       { "name": "1 star", "count": 1800 },
       { "name": "2 star", "count": 2500 },
@@ -134,7 +134,7 @@
     "ratingAvg": 4.5,
     "reviews": "80K",
     "size": "23MB",
-    "description": "Relax and improve focus with guided meditations and mindfulness sessions.",
+    "description": "MeditateNow offers guided meditation sessions tailored to various needs including stress reduction, better sleep, improved focus, and emotional balance. The app features sessions ranging from 3-minute quick breaks to 60-minute deep meditation practices. Personalized recommendations adapt to your progress and preferences, while progress tracking shows your meditation streak and milestones. Soothing background sounds and nature ambiances create the perfect environment for relaxation. The science-backed techniques are developed in collaboration with mindfulness experts and psychologists. Community features allow you to join group meditation sessions and share experiences with like-minded individuals on their wellness journey.",
     "ratings": [
       { "name": "1 star", "count": 1500 },
       { "name": "2 star", "count": 2400 },
@@ -152,7 +152,7 @@
     "ratingAvg": 4.2,
     "reviews": "70K",
     "size": "33MB",
-    "description": "Discover delicious recipes and order food from your favorite restaurants instantly.",
+    "description": "Foodies combines recipe discovery with seamless food delivery in one comprehensive platform. Browse thousands of chef-curated recipes with step-by-step video instructions, ingredient lists, and nutritional information. The smart pantry feature suggests recipes based on ingredients you already have, reducing food waste. Integrated grocery delivery allows one-tap ordering of missing ingredients. Restaurant delivery partners offer quick access to local favorites and exclusive deals. Community features include recipe sharing, cooking challenges, and user reviews. Dietary filters accommodate various preferences including vegan, gluten-free, keto, and paleo, making Foodies the ultimate kitchen companion for home cooks and food enthusiasts.",
     "ratings": [
       { "name": "1 star", "count": 1900 },
       { "name": "2 star", "count": 3000 },
@@ -170,7 +170,7 @@
     "ratingAvg": 4.3,
     "reviews": "65K",
     "size": "45MB",
-    "description": "Access thousands of online courses and skill development programs anytime, anywhere.",
+    "description": "LearnHub provides access to thousands of courses across diverse subjects including programming, business, design, languages, and personal development. Expert instructors from top universities and companies deliver engaging video lessons, interactive assignments, and practical projects. The adaptive learning path personalizes course recommendations based on your goals and progress. Features include downloadable content for offline learning, discussion forums for peer interaction, and progress certificates for completed courses. Skill assessments help identify knowledge gaps, while project portfolios showcase your achievements to potential employers. Corporate training solutions make LearnHub suitable for both individual learners and organizational skill development programs.",
     "ratings": [
       { "name": "1 star", "count": 2100 },
       { "name": "2 star", "count": 2600 },
@@ -179,184 +179,185 @@
       { "name": "5 star", "count": 39500 }
     ]
   },
+
   {
     "id": 11,
-    "title": "MovieMania - Movie Streaming & Reviews",
-    "companyName": "produced.io",
-    "image": "../src/assets/movie.jpg",
-    "downloads": "3M",
-    "ratingAvg": 4.4,
-    "reviews": "95K",
-    "size": "50MB",
-    "description": "Stream your favorite movies, read reviews, and discover trending films across genres.",
-    "ratings": [
-      { "name": "1 star", "count": 2300 },
-      { "name": "2 star", "count": 3100 },
-      { "name": "3 star", "count": 6200 },
-      { "name": "4 star", "count": 20000 },
-      { "name": "5 star", "count": 68000 }
-    ]
-  },
-  {
-    "id": 12,
-    "title": "NewsFlash - Latest News & Headlines App",
-    "companyName": "produced.io",
-    "image": "../src/assets/news.jpg",
-    "downloads": "2M",
-    "ratingAvg": 4.1,
-    "reviews": "55K",
-    "size": "27MB",
-    "description": "Stay informed with real-time news updates and trending headlines from trusted sources.",
-    "ratings": [
-      { "name": "1 star", "count": 1500 },
-      { "name": "2 star", "count": 2700 },
-      { "name": "3 star", "count": 5200 },
-      { "name": "4 star", "count": 15000 },
-      { "name": "5 star", "count": 30600 }
-    ]
-  },
-  {
-    "id": 13,
-    "title": "TaskMaster Pro - Advanced Productivity App",
+    "title": "TaskMaster - Productivity & Task Management App",
     "companyName": "produced.io",
     "image": "../src/assets/technology.jpg",
     "downloads": "3M",
     "ratingAvg": 4.5,
-    "reviews": "130K",
-    "size": "30MB",
-    "description": "A professional productivity app with project tracking, collaboration, and analytics tools.",
+    "reviews": "120K",
+    "size": "25MB",
+    "description": "TaskMaster revolutionizes personal productivity by offering an intuitive task management system that adapts to your workflow. With smart categorization, priority tagging, and deadline tracking, you can organize both personal and professional tasks effortlessly. The app features cross-device synchronization, allowing seamless access from your phone, tablet, or computer. Advanced features include collaborative project boards, progress analytics, and AI-powered task suggestions based on your habits. Customizable reminders ensure you never miss important deadlines, while the clean, minimalist interface reduces cognitive load and enhances focus.",
     "ratings": [
-      { "name": "1 star", "count": 1400 },
-      { "name": "2 star", "count": 2600 },
-      { "name": "3 star", "count": 4800 },
-      { "name": "4 star", "count": 21000 },
-      { "name": "5 star", "count": 90000 }
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 4500 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 85000 }
     ]
   },
   {
-    "id": 14,
-    "title": "FitTrack Plus - Health & Fitness Tracker",
+    "id": 12,
+    "title": "FitTrack - Fitness & Health Tracker",
     "companyName": "produced.io",
     "image": "../src/assets/fittrack.jpg",
     "downloads": "4M",
     "ratingAvg": 4.2,
-    "reviews": "105K",
-    "size": "35MB",
-    "description": "Your upgraded fitness companion with diet planner, activity monitor, and smart insights.",
+    "reviews": "98K",
+    "size": "30MB",
+    "description": "FitTrack provides comprehensive health monitoring with advanced activity tracking, workout planning, and nutrition guidance. The app syncs with popular wearables to monitor steps, heart rate, sleep patterns, and calorie expenditure. Personalized workout routines adapt to your fitness level and goals, whether you're aiming for weight loss, muscle gain, or general wellness. The nutrition module includes barcode scanning for food logging, macro tracking, and meal planning suggestions. Community challenges and achievement badges keep you motivated, while detailed analytics help you understand your progress over time and make data-driven health decisions.",
     "ratings": [
-      { "name": "1 star", "count": 2100 },
-      { "name": "2 star", "count": 2900 },
-      { "name": "3 star", "count": 5800 },
-      { "name": "4 star", "count": 23000 },
-      { "name": "5 star", "count": 70000 }
+      { "name": "1 star", "count": 2200 },
+      { "name": "2 star", "count": 3100 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 65000 }
     ]
   },
   {
-    "id": 15,
-    "title": "BudgetBuddy Premium - Finance Manager",
+    "id": 13,
+    "title": "BudgetBuddy - Personal Finance & Budget Planner",
     "companyName": "produced.io",
     "image": "../src/assets/budget.jpg",
     "downloads": "2M",
     "ratingAvg": 4.0,
-    "reviews": "85K",
-    "size": "32MB",
-    "description": "Manage your personal and professional finances with advanced budgeting tools.",
+    "reviews": "75K",
+    "size": "28MB",
+    "description": "BudgetBuddy transforms financial management with intelligent expense categorization, automated bill tracking, and personalized savings goals. The app connects securely to your bank accounts for real-time transaction monitoring and provides detailed spending insights across categories. Advanced features include debt payoff calculators, investment tracking, and retirement planning tools. Customizable budget templates help you allocate funds effectively, while alerts notify you of unusual spending patterns. The secure encryption ensures your financial data remains private, and the export functionality allows easy sharing with financial advisors or tax preparers for comprehensive financial planning.",
     "ratings": [
-      { "name": "1 star", "count": 2600 },
-      { "name": "2 star", "count": 3300 },
-      { "name": "3 star", "count": 7100 },
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 8000 },
       { "name": "4 star", "count": 16000 },
-      { "name": "5 star", "count": 45000 }
+      { "name": "5 star", "count": 44000 }
     ]
   },
   {
-    "id": 16,
-    "title": "WeatherNow Pro - Accurate Weather Updates",
+    "id": 14,
+    "title": "WeatherNow - Real-time Weather Forecast",
     "companyName": "produced.io",
     "image": "../src/assets/weather.jpg",
     "downloads": "1M",
     "ratingAvg": 4.3,
-    "reviews": "60K",
-    "size": "25MB",
-    "description": "Get detailed weather forecasts, air quality updates, and storm alerts in real time.",
+    "reviews": "55K",
+    "size": "22MB",
+    "description": "WeatherNow delivers hyper-accurate weather predictions with detailed hourly and 10-day forecasts for any location worldwide. The app features severe weather alerts, precipitation probability maps, and air quality indices. Advanced radar animations show storm movement patterns, while customizable widgets provide at-a-glance weather information on your home screen. The intuitive interface displays temperature trends, wind speeds, humidity levels, and UV indexes. Location-based alerts warn you of incoming weather changes, and the offline mode ensures access to saved forecasts even without internet connectivity. Perfect for travelers, outdoor enthusiasts, and daily commuters alike.",
     "ratings": [
-      { "name": "1 star", "count": 1300 },
-      { "name": "2 star", "count": 2400 },
-      { "name": "3 star", "count": 4600 },
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 5000 },
       { "name": "4 star", "count": 12000 },
-      { "name": "5 star", "count": 39700 }
+      { "name": "5 star", "count": 34800 }
     ]
   },
   {
-    "id": 17,
-    "title": "NoteIt Plus - Organize Your Notes",
+    "id": 15,
+    "title": "NoteIt - Note Taking & Organization App",
     "companyName": "produced.io",
     "image": "../src/assets/note.jpg",
     "downloads": "1M",
     "ratingAvg": 4.1,
-    "reviews": "62K",
-    "size": "22MB",
-    "description": "Upgrade your note-taking experience with cloud sync, tags, and collaboration features.",
+    "reviews": "60K",
+    "size": "20MB",
+    "description": "NoteIt offers a versatile note-taking experience with rich text formatting, voice memos, image attachments, and handwriting recognition. Organize notes using tags, notebooks, and smart folders that automatically categorize content. The powerful search functionality indexes all your notes, including text within images and audio transcripts. Collaboration features allow real-time editing and commenting with team members. End-to-end encryption ensures your private thoughts remain secure, while cross-platform synchronization keeps your notes accessible across all devices. Templates for meeting notes, project plans, and study guides streamline your workflow, making NoteIt the ultimate digital notebook for students and professionals.",
     "ratings": [
-      { "name": "1 star", "count": 1400 },
-      { "name": "2 star", "count": 2700 },
-      { "name": "3 star", "count": 6000 },
-      { "name": "4 star", "count": 14000 },
-      { "name": "5 star", "count": 34900 }
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 2600 },
+      { "name": "3 star", "count": 7200 },
+      { "name": "4 star", "count": 15800 },
+      { "name": "5 star", "count": 32000 }
     ]
   },
   {
-    "id": 18,
-    "title": "TravelMate Pro - Trip Planning & Guide",
+    "id": 16,
+    "title": "TravelMate - Trip Planner & Travel Guide",
     "companyName": "produced.io",
     "image": "../src/assets/travel.jpg",
     "downloads": "3M",
     "ratingAvg": 4.6,
-    "reviews": "115K",
-    "size": "38MB",
-    "description": "Explore destinations worldwide, manage itineraries, and enjoy offline navigation.",
+    "reviews": "110K",
+    "size": "35MB",
+    "description": "TravelMate simplifies trip planning with comprehensive itinerary management, destination research, and booking integration. Create detailed travel plans with flight schedules, hotel reservations, activity bookings, and restaurant recommendations. The app provides offline maps, currency converters, and phrase translators for international travel. User-generated reviews and photos help you discover hidden gems, while price tracking ensures you get the best deals on flights and accommodations. Safety features include emergency contact integration, local embassy information, and real-time travel advisories. Whether you're planning a weekend getaway or a world tour, TravelMate handles all the details so you can focus on making memories.",
     "ratings": [
-      { "name": "1 star", "count": 1300 },
-      { "name": "2 star", "count": 1900 },
-      { "name": "3 star", "count": 4100 },
-      { "name": "4 star", "count": 20000 },
-      { "name": "5 star", "count": 88000 }
+      { "name": "1 star", "count": 1400 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 19000 },
+      { "name": "5 star", "count": 84000 }
     ]
   },
   {
-    "id": 19,
-    "title": "PhotoSnap Pro - Advanced Photo Editor",
+    "id": 17,
+    "title": "PhotoSnap - Photo Editor & Camera App",
     "companyName": "produced.io",
     "image": "../src/assets/snap.jpg",
     "downloads": "2M",
     "ratingAvg": 4.4,
-    "reviews": "92K",
-    "size": "42MB",
-    "description": "Advanced photo editing app with RAW support, AI background remover, and filters.",
+    "reviews": "90K",
+    "size": "40MB",
+    "description": "PhotoSnap combines professional-grade editing tools with an intuitive interface suitable for beginners and experts alike. Features include layer-based editing, selective adjustments, curve tools, and advanced color grading. AI-powered enhancements automatically improve lighting, remove imperfections, and enhance details. The built-in camera offers manual controls for ISO, shutter speed, and white balance, along with various shooting modes and filters. Creative tools like double exposure, text overlays, and collage makers unlock artistic possibilities. Cloud storage integration ensures your edited photos are safely backed up and accessible across devices. Regular updates introduce new filters and features inspired by the latest photography trends.",
     "ratings": [
       { "name": "1 star", "count": 1800 },
-      { "name": "2 star", "count": 2600 },
-      { "name": "3 star", "count": 5300 },
-      { "name": "4 star", "count": 19000 },
-      { "name": "5 star", "count": 73300 }
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 17000 },
+      { "name": "5 star", "count": 73700 }
     ]
   },
   {
-    "id": 20,
-    "title": "MeditateNow Pro - Guided Meditation & Mindfulness",
+    "id": 18,
+    "title": "MeditateNow - Meditation & Mindfulness App",
     "companyName": "produced.io",
     "image": "../src/assets/meditate.jpg",
     "downloads": "2M",
     "ratingAvg": 4.5,
-    "reviews": "82K",
-    "size": "26MB",
-    "description": "Improve mental well-being with professional guided meditations and focus exercises.",
+    "reviews": "80K",
+    "size": "23MB",
+    "description": "MeditateNow offers guided meditation sessions tailored to various needs including stress reduction, better sleep, improved focus, and emotional balance. The app features sessions ranging from 3-minute quick breaks to 60-minute deep meditation practices. Personalized recommendations adapt to your progress and preferences, while progress tracking shows your meditation streak and milestones. Soothing background sounds and nature ambiances create the perfect environment for relaxation. The science-backed techniques are developed in collaboration with mindfulness experts and psychologists. Community features allow you to join group meditation sessions and share experiences with like-minded individuals on their wellness journey.",
     "ratings": [
       { "name": "1 star", "count": 1500 },
-      { "name": "2 star", "count": 2100 },
-      { "name": "3 star", "count": 4600 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 4100 },
       { "name": "4 star", "count": 17000 },
-      { "name": "5 star", "count": 57800 }
+      { "name": "5 star", "count": 55000 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Foodies - Recipe & Food Delivery App",
+    "companyName": "produced.io",
+    "image": "../src/assets/panda.jpg",
+    "downloads": "3M",
+    "ratingAvg": 4.2,
+    "reviews": "70K",
+    "size": "33MB",
+    "description": "Foodies combines recipe discovery with seamless food delivery in one comprehensive platform. Browse thousands of chef-curated recipes with step-by-step video instructions, ingredient lists, and nutritional information. The smart pantry feature suggests recipes based on ingredients you already have, reducing food waste. Integrated grocery delivery allows one-tap ordering of missing ingredients. Restaurant delivery partners offer quick access to local favorites and exclusive deals. Community features include recipe sharing, cooking challenges, and user reviews. Dietary filters accommodate various preferences including vegan, gluten-free, keto, and paleo, making Foodies the ultimate kitchen companion for home cooks and food enthusiasts.",
+    "ratings": [
+      { "name": "1 star", "count": 1900 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 5500 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 51600 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "LearnHub - Online Learning & Courses Platform",
+    "companyName": "produced.io",
+    "image": "../src/assets/snap.jpg",
+    "downloads": "2M",
+    "ratingAvg": 4.3,
+    "reviews": "65K",
+    "size": "45MB",
+    "description": "LearnHub provides access to thousands of courses across diverse subjects including programming, business, design, languages, and personal development. Expert instructors from top universities and companies deliver engaging video lessons, interactive assignments, and practical projects. The adaptive learning path personalizes course recommendations based on your goals and progress. Features include downloadable content for offline learning, discussion forums for peer interaction, and progress certificates for completed courses. Skill assessments help identify knowledge gaps, while project portfolios showcase your achievements to potential employers. Corporate training solutions make LearnHub suitable for both individual learners and organizational skill development programs.",
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 2600 },
+      { "name": "3 star", "count": 4800 },
+      { "name": "4 star", "count": 16000 },
+      { "name": "5 star", "count": 39500 }
     ]
   }
 ]

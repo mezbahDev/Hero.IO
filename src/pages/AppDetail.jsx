@@ -15,22 +15,41 @@ import download from "../assets/icon-downloads.png";
 import rating from "../assets/icon-ratings.png";
 import review from "../assets/review.png";
 
+const InstallButton = ({ app, isInstalled, onInstall }) => {
+  return (
+    <button
+      onClick={onInstall}
+      disabled={isInstalled}
+      className={`mt-[30px] text-white px-[20px] py-[14px] rounded-[8px] font-semibold text-[20px] transition 
+        ${
+          isInstalled
+            ? "bg-gray-400 cursor-not-allowed"
+            : "bg-[#00D390] hover:scale-105 cursor-pointer"
+        }`}
+    >
+      {isInstalled ? "Installed" : `Install Now (${app.size})`}
+    </button>
+  );
+};
+
 const AppDetail = () => {
   const { id } = useParams();
   const [app, setApp] = useState(null);
+  const [allApps, setAllApps] = useState([]);
   const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
+        setAllApps(data);
         const selectedApp = data.find((item) => item.id === Number(id));
         setApp(selectedApp);
 
         const installedApps =
           JSON.parse(localStorage.getItem("installedApps")) || [];
         const isAppInstalled = installedApps.some(
-          (installedApp) => installedApp.id === selectedApp.id
+          (installedApp) => installedApp.id === selectedApp?.id
         );
         setIsInstalled(isAppInstalled);
       })
@@ -48,7 +67,6 @@ const AppDetail = () => {
         localStorage.setItem("installedApps", JSON.stringify(updatedApps));
 
         setIsInstalled(true);
-
         window.dispatchEvent(new Event("installedAppsUpdated"));
 
         toast.update(toastId, {
@@ -61,10 +79,12 @@ const AppDetail = () => {
     }
   };
 
-  if (!app) return <p className="text-center mt-10 text-black">Loading...</p>;
+  if (!app)
+    return <p className="text-center mt-10 text-black">Loading App Data...</p>;
 
   return (
     <div className="text-black bg-[#f1f1f1] p-[80px]">
+      {/* App Header */}
       <div className="flex flex-col md:flex-row items-center w-full mb-10 gap-[100px]">
         <img
           src={app.image}
@@ -78,7 +98,7 @@ const AppDetail = () => {
             <p className="text-[#627382]">
               Developed by{" "}
               <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold">
-                produced.io
+                {app.companyName}
               </span>
             </p>
           </div>
@@ -122,22 +142,16 @@ const AppDetail = () => {
               </div>
             </div>
 
-            <button
-              onClick={handleInstall}
-              disabled={isInstalled}
-              className={`mt-[30px] text-white px-[20px] py-[14px] rounded-[8px] font-semibold text-[20px] transition 
-                ${
-                  isInstalled
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-[#00D390] hover:scale-105 cursor-pointer"
-                }`}
-            >
-              {isInstalled ? "Installed" : `Install Now (${app.size})`}
-            </button>
+            <InstallButton
+              app={app}
+              isInstalled={isInstalled}
+              onInstall={handleInstall}
+            />
           </div>
         </div>
       </div>
 
+      {/* Ratings Chart */}
       <div className="bg-white rounded-[10px] shadow p-[40px] mt-[100px]">
         <h2 className="text-[24px] font-semibold text-[#001931] mb-6">
           Ratings
@@ -161,9 +175,9 @@ const AppDetail = () => {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <Description />
 
-      {/* Toast container */}
+      <Description data={allApps} />
+
       <ToastContainer position="top-right" />
     </div>
   );

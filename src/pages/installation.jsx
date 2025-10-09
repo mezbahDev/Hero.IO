@@ -7,25 +7,24 @@ const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
   const [sortBy, setSortBy] = useState("default");
   const [showSortOptions, setShowSortOptions] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  // localStorage থেকে installed apps load করুন
   const loadInstalledApps = () => {
     const savedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
     setInstalledApps(savedApps);
   };
 
   useEffect(() => {
-    // প্রথমবার load করুন
+    setLoading(true);
     loadInstalledApps();
+    setLoading(false);
 
-    // ✅ Custom event listen করুন
     const handleInstalledAppsUpdate = () => {
       loadInstalledApps();
     };
 
     window.addEventListener("installedAppsUpdated", handleInstalledAppsUpdate);
 
-    // Cleanup
     return () => {
       window.removeEventListener(
         "installedAppsUpdated",
@@ -34,25 +33,17 @@ const Installation = () => {
     };
   }, []);
 
-  // Size sort functionality
   const sortAppsBySize = (apps, sortType) => {
     const sortedApps = [...apps];
-
     switch (sortType) {
       case "size-high-to-low":
-        return sortedApps.sort((a, b) => {
-          const sizeA = parseFloat(a.size) || 0;
-          const sizeB = parseFloat(b.size) || 0;
-          return sizeB - sizeA;
-        });
-
+        return sortedApps.sort(
+          (a, b) => (parseFloat(b.size) || 0) - (parseFloat(a.size) || 0)
+        );
       case "size-low-to-high":
-        return sortedApps.sort((a, b) => {
-          const sizeA = parseFloat(a.size) || 0;
-          const sizeB = parseFloat(b.size) || 0;
-          return sizeA - sizeB;
-        });
-
+        return sortedApps.sort(
+          (a, b) => (parseFloat(a.size) || 0) - (parseFloat(b.size) || 0)
+        );
       default:
         return sortedApps;
     }
@@ -67,8 +58,6 @@ const Installation = () => {
     const updatedApps = installedApps.filter((app) => app.id !== appId);
     setInstalledApps(updatedApps);
     localStorage.setItem("installedApps", JSON.stringify(updatedApps));
-
-    // ✅ Uninstall করলেও event trigger করুন
     window.dispatchEvent(new Event("installedAppsUpdated"));
   };
 
@@ -84,6 +73,14 @@ const Installation = () => {
         return "Sort By Size";
     }
   };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-[#f1f1f1]">
+        <span className="loading loading-dots loading-xl"></span>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col items-center p-[80px] bg-[#f1f1f1] min-h-screen">
@@ -102,7 +99,6 @@ const Installation = () => {
             {sortedApps.length} {sortedApps.length === 1 ? "App" : "Apps"} Found
           </p>
 
-          {/* Sort Dropdown */}
           <div className="relative">
             <div
               onClick={() => setShowSortOptions(!showSortOptions)}
@@ -111,7 +107,6 @@ const Installation = () => {
               {getSortDisplayText()} <CircleChevronDown className="ml-[10px]" />
             </div>
 
-            {/* Sort Options Dropdown */}
             {showSortOptions && (
               <div className="absolute top-full right-0 mt-2 w-48 bg-white border rounded-[4px] shadow-lg z-10">
                 <div className="p-2">
@@ -197,7 +192,6 @@ const Installation = () => {
         )}
       </div>
 
-      {/* Close dropdown when clicking outside */}
       {showSortOptions && (
         <div
           className="fixed inset-0 z-0"

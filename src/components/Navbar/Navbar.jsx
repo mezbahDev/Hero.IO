@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar shadow-sm px-[80px] py-[16px] bg-white sticky top-0 z-50">
-      {/* for Logo */}
+
       <div className="navbar-start">
         <div className="flex items-center gap-2">
           <img className="w-[40px] h-[40px]" src={logo} alt="page logo" />
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* for Navigation Links */}
+
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-9 font-semibold text-black">
           {links.map((link) => (
@@ -48,7 +48,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* for- GitHub Button */}
       <div className="navbar-end">
         <a
           href="https://github.com"

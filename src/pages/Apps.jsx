@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Apps = () => {
   const [allCards, setAllCards] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const navigate = useNavigate();
 
@@ -14,14 +15,17 @@ const Apps = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setAllCards(data))
-      .catch((err) => console.log("Error loading data:", err));
+      .catch((err) => console.log("Error loading data:", err))
+      .finally(() => setLoading(false));
   }, []);
 
-  const filteredCards = allCards.filter((card) =>
-    card.title.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredCards = allCards.filter(
+    (card) =>
+      card.title && card.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const handleInstall = (app) => {
@@ -30,10 +34,17 @@ const Apps = () => {
     if (!installedApps.find((installedApp) => installedApp.id === app.id)) {
       const updatedApps = [...installedApps, app];
       localStorage.setItem("installedApps", JSON.stringify(updatedApps));
-
       window.dispatchEvent(new Event("installedAppsUpdated"));
     }
   };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-[#f3f4f6]">
+        <span className="loading loading-dots loading-xl"></span>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-[#f3f4f6] min-h-screen flex flex-col items-center p-[80px] gap-[40px]">
@@ -53,20 +64,6 @@ const Apps = () => {
         </p>
 
         <div className="relative w-64">
-          <svg
-            className="h-5 w-5 absolute left-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-
           <input
             type="search"
             placeholder="Search Apps"
@@ -77,7 +74,27 @@ const Apps = () => {
         </div>
       </div>
 
-      {filteredCards.length > 0 ? (
+      {allCards.length === 0 ? (
+        <div className="flex flex-col items-center gap-[20px]">
+          <img
+            src={noApps}
+            alt="No apps found"
+            className="w-72 h-72 object-contain mb-6"
+          />
+          <h2 className="text-3xl font-semibold text-gray-800 mb-2">
+            NO APPS AVAILABLE
+          </h2>
+          <p className="text-gray-500 text-lg">
+            Failed to load apps. Please try again later.
+          </p>
+          <button
+            onClick={handleGoHome}
+            className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] cursor-pointer text-white w-[150px] py-3 rounded-lg font-semibold text-lg hover:scale-105 transform transition duration-300 shadow-lg"
+          >
+            Go Home
+          </button>
+        </div>
+      ) : filteredCards.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-black mt-10">
           {filteredCards.map((singleCard) => {
             const installedApps =
@@ -107,7 +124,8 @@ const Apps = () => {
             OPPS!! APP NOT FOUND
           </h2>
           <p className="text-gray-500 text-lg">
-            Try searching with a different keyword
+            No results found for "{searchQuery}". Try searching with a different
+            keyword.
           </p>
           <button
             onClick={handleGoHome}

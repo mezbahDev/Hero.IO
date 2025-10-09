@@ -25,7 +25,6 @@ const Hero = () => {
       </div>
 
       <div className="flex gap-6 ">
-        {/* Google Play */}
         <a
           href="#"
           className="flex items-center gap-2 border border-[#D2D2D2] px-6 py-3 rounded-[6px]"
@@ -36,7 +35,6 @@ const Hero = () => {
           </p>
         </a>
 
-        {/* App Store */}
         <a
           href="#"
           className="flex items-center gap-2 border border-[#D2D2D2] px-6 py-3 rounded-[6px]"
