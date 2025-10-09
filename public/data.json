@@ -3,7 +3,7 @@
     "id": 1,
     "title": "TaskMaster - Productivity & Task Management App",
     "companyName": "produced.io",
-    "image": "../src/assets/technology.jpg",
+    "image": "/assets/technology.jpg",
     "downloads": "3M",
     "ratingAvg": 4.5,
     "reviews": "120K",
