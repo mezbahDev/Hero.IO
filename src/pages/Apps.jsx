@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
 import noApps from "../assets/App-Error.png";
+import { useNavigate } from "react-router-dom";
 
 const Apps = () => {
   const [allCards, setAllCards] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleGoHome = () => {
+    navigate("/home");
+  };
 
   useEffect(() => {
     fetch("/data.json")
@@ -90,7 +97,25 @@ const Apps = () => {
           })}
         </div>
       ) : (
-        <p className="text-black text-6xl mt-10">No Apps Found</p>
+        <div className="flex flex-col items-center gap-[20px]">
+          <img
+            src={noApps}
+            alt="No apps found"
+            className="w-72 h-72 object-contain mb-6"
+          />
+          <h2 className="text-3xl font-semibold text-gray-800 mb-2">
+            OPPS!! APP NOT FOUND
+          </h2>
+          <p className="text-gray-500 text-lg">
+            Try searching with a different keyword
+          </p>
+          <button
+            onClick={handleGoHome}
+            className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] cursor-pointer text-white w-[150px] py-3 rounded-lg font-semibold text-lg hover:scale-105 transform transition duration-300 shadow-lg"
+          >
+            Go Home
+          </button>
+        </div>
       )}
     </div>
   );
