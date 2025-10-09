@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
+import noApps from "../assets/App-Error.png";
 
 const Apps = () => {
   const [allCards, setAllCards] = useState([]);

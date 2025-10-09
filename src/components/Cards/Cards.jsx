@@ -8,10 +8,10 @@ const Cards = ({ data }) => {
 
   if (!data || data.length === 0) return <p>Thinking...</p>;
 
-  // 8 card show by default
+
   const visibleCards = showAll ? data : data.slice(0, 8);
 
-  // Button press korle apps page e niye jabe
+
   const handleAll = () => {
     navigate("/apps");
   };
