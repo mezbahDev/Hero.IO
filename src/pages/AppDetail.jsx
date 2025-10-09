@@ -11,9 +11,6 @@ import {
 } from "recharts";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import download from "../../public/assets/icon-downloads.png";
-import rating from "../../public/assets/icon-ratings.png";
-import review from "../../public/assets/review.png";
 
 const InstallButton = ({ app, isInstalled, onInstall }) => {
   return (
@@ -107,7 +104,7 @@ const AppDetail = () => {
             <div className="flex flex-wrap gap-[50px] h-[120px]">
               <div className="flex flex-col items-center">
                 <img
-                  src={download}
+                  src="/assets/icon-downloads.png"
                   alt=""
                   className="w-[40px] h-[40px] mb-[8px]"
                 />
@@ -119,7 +116,7 @@ const AppDetail = () => {
 
               <div className="flex flex-col items-center">
                 <img
-                  src={rating}
+                  src="/assets/icon-ratings.png"
                   alt=""
                   className="w-[40px] h-[40px] mb-[8px]"
                 />
@@ -131,7 +128,7 @@ const AppDetail = () => {
 
               <div className="flex flex-col items-center">
                 <img
-                  src={review}
+                  src="/assets/review.png"
                   alt=""
                   className="w-[40px] h-[40px] mb-[8px]"
                 />
