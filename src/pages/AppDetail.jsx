@@ -11,6 +11,9 @@ import {
 } from "recharts";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import download from "../../public/assets/icon-downloads.png";
+import rating from "../../public/assets/icon-ratings.png";
+import review from "../../public/assets/review.png";
 
 const InstallButton = ({ app, isInstalled, onInstall }) => {
   return (
@@ -77,11 +80,14 @@ const AppDetail = () => {
   };
 
   if (!app)
-    return <p className="text-center mt-10 text-black">Loading App Data...</p>;
+    return (
+      <p className="py-50">
+        <span class="loading loading-spinner loading-xl"></span>
+      </p>
+    );
 
   return (
     <div className="text-black bg-[#f1f1f1] p-[80px]">
-      {/* App Header */}
       <div className="flex flex-col md:flex-row items-center w-full mb-10 gap-[100px]">
         <img
           src={app.image}
@@ -104,7 +110,7 @@ const AppDetail = () => {
             <div className="flex flex-wrap gap-[50px] h-[120px]">
               <div className="flex flex-col items-center">
                 <img
-                  src="/assets/icon-downloads.png"
+                  src={download}
                   alt=""
                   className="w-[40px] h-[40px] mb-[8px]"
                 />
@@ -116,7 +122,7 @@ const AppDetail = () => {
 
               <div className="flex flex-col items-center">
                 <img
-                  src="/assets/icon-ratings.png"
+                  src={rating}
                   alt=""
                   className="w-[40px] h-[40px] mb-[8px]"
                 />
@@ -128,7 +134,7 @@ const AppDetail = () => {
 
               <div className="flex flex-col items-center">
                 <img
-                  src="/assets/review.png"
+                  src={review}
                   alt=""
                   className="w-[40px] h-[40px] mb-[8px]"
                 />
@@ -148,7 +154,6 @@ const AppDetail = () => {
         </div>
       </div>
 
-      {/* Ratings Chart */}
       <div className="bg-white rounded-[10px] shadow p-[40px] mt-[100px]">
         <h2 className="text-[24px] font-semibold text-[#001931] mb-6">
           Ratings
