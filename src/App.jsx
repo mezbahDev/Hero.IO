@@ -13,7 +13,7 @@ function App() {
     }
   };
 
- return (
+  return (
     <Router>
       <Routes>
         <Route path="/" element={<Apps handleInstall={handleInstall} />} />

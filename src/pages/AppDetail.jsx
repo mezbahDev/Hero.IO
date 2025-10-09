@@ -11,9 +11,9 @@ import {
 } from "recharts";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import download from "../assets/icon-downloads.png";
-import rating from "../assets/icon-ratings.png";
-import review from "../assets/review.png";
+import download from "../../public/assets/icon-downloads.png";
+import rating from "../../public/assets/icon-ratings.png";
+import review from "../../public/assets/review.png";
 
 const InstallButton = ({ app, isInstalled, onInstall }) => {
   return (

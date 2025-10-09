@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CircleChevronDown } from "lucide-react";
-import downloadIcon from "../assets/icon-downloads.png";
-import ratings from "../assets/icon-ratings.png";
+import downloadIcon from "../../public/assets/icon-downloads.png";
+import ratings from "../../public/assets/icon-ratings.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import playImg from "../../assets/googlePlay.png";
-import appImg from "../../assets/appStore.png";
-import heroImg from "../../assets/hero.png";
+import playImg from "../../../public/assets/appStore.png";
+import appImg from "../../../public/assets/appStore.png";
+import heroImg from "../../../public/assets/hero.png";
 
 const Hero = () => {
   return (

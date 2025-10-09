@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import downloadIcon from "../../assets/icon-downloads.png";
-import ratings from "../../assets/icon-ratings.png";
+import downloadIcon from "../../../public/assets/icon-downloads.png";
+import ratings from "../../../public/assets/icon-ratings.png";
 
 const Card = ({ singleCard }) => {
   const navigate = useNavigate();

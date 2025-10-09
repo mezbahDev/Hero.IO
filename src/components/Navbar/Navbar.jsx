@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../../public/assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { Github } from "lucide-react";
 

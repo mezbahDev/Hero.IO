@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
-import noApps from "../assets/App-Error.png";
+import noApps from "../../public/assets/App-Error.png";
 import { useNavigate } from "react-router-dom";
 
 const Apps = () => {
