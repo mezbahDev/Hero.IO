@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { CircleChevronDown } from "lucide-react";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratings from "../assets/icon-ratings.png";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -54,11 +56,23 @@ const Installation = () => {
     setShowSortOptions(false);
   };
 
+  // ✅ Uninstall with toast
   const handleUninstall = (appId) => {
     const updatedApps = installedApps.filter((app) => app.id !== appId);
     setInstalledApps(updatedApps);
     localStorage.setItem("installedApps", JSON.stringify(updatedApps));
     window.dispatchEvent(new Event("installedAppsUpdated"));
+
+    // Show toast
+    toast.success("App uninstalled successfully!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   const sortedApps = sortAppsBySize(installedApps, sortBy);
@@ -84,6 +98,8 @@ const Installation = () => {
 
   return (
     <div className="flex flex-col items-center p-[80px] bg-[#f1f1f1] min-h-screen">
+      <ToastContainer position="top-right" />
+
       <div className="flex flex-col items-center gap-[16px]">
         <h1 className="text-[48px] text-[#001931] font-bold">
           Your Installed Apps

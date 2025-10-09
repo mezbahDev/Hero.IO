@@ -14,7 +14,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar shadow-sm px-[80px] py-[16px] bg-white sticky top-0 z-50">
-
       <div className="navbar-start">
         <div className="flex items-center gap-2">
           <img className="w-[40px] h-[40px]" src={logo} alt="page logo" />
@@ -26,7 +25,6 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-
 
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-9 font-semibold text-black">
@@ -50,7 +48,7 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <a
-          href="https://github.com"
+          href="https://github.com/mezbahDev/Hero.IO"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white flex items-center gap-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-[10px] px-[16px] rounded-[4px] hover:scale-105 transition-transform duration-200"

@@ -26,7 +26,7 @@ const Hero = () => {
 
       <div className="flex gap-6 ">
         <a
-          href="#"
+          href="https://play.google.com"
           className="flex items-center gap-2 border border-[#D2D2D2] px-6 py-3 rounded-[6px]"
         >
           <img src={playImg} alt="Google Play" className="w-8] h-8" />
@@ -36,7 +36,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="#"
+          href="https://www.apple.com/store"
           className="flex items-center gap-2 border border-[#D2D2D2] px-6 py-3 rounded-[6px]"
         >
           <img src={appImg} alt="App Store" className="w-8 h-8" />
